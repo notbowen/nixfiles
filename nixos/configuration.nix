@@ -28,6 +28,9 @@
   # Set hostname
   networking.hostName = "nixos";
 
+  # Enable ZSH
+  programs.zsh.enable = true;
+
   # Configure system-wide user settings (groups, etc), add more users as needed.
   users.users = {
     bowen = {
@@ -37,6 +40,7 @@
         # TODO: Add SSH public key here
       ];
       extraGroups = ["wheel"];
+      shell = pkgs.zsh;
     };
   };
 
