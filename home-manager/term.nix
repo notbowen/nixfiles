@@ -35,5 +35,11 @@
       syntax enable
     '';
   };
+
+  # Exa (`ls` replacement)
+  programs.eza = {
+    enable = true;
+    enableZshIntegration = true;
+  };
 }
 
