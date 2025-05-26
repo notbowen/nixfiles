@@ -37,7 +37,7 @@
       initialPassword = "root";
       isNormalUser = true;
       openssh.authorizedKeys.keys = [
-        # TODO: Add SSH public key here
+        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGCNkDOrVKbSwMSRYyVAEMSfG9wFYdIB7GNwB/kSZ322 bowen@MacDonels.local"
       ];
       extraGroups = ["wheel"];
       shell = pkgs.zsh;
