@@ -12,6 +12,7 @@
 
     ./terminal.nix
     ./neovim.nix
+    ./tmux.nix
   ];
 
   home = {
