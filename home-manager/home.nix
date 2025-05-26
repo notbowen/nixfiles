@@ -7,8 +7,8 @@
   ...
 }: {
   imports = [
-    ./git.nix
-    ./nvim.nix
+    ./vcs.nix
+    ./term.nix
   ];
 
   home = {
