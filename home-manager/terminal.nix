@@ -15,7 +15,6 @@
 
       # My stuff
       lg = "lazygit";
-      vim = "nvim";
     };
 
     history.size = 10000;
@@ -25,15 +24,6 @@
   programs.starship = {
     enable = true;
     enableZshIntegration = true;
-  };
-
-  # Neovim
-  programs.neovim = {
-    enable = true;
-    extraConfig = ''
-      set relativenumber
-      syntax enable
-    '';
   };
 
   # Exa (`ls` replacement)

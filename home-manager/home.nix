@@ -7,8 +7,11 @@
   ...
 }: {
   imports = [
-    ./vcs.nix
-    ./term.nix
+    ./version-control.nix
+    ./development.nix
+
+    ./terminal.nix
+    ./neovim.nix
   ];
 
   home = {
