@@ -13,7 +13,7 @@
     nvim = {
       source =
         config.lib.file.mkOutOfStoreSymlink
-        "${config.home.homeDirectory}/.nixfiles/nvim";
+        "../nvim";
       recursive = true;
     };
   };
