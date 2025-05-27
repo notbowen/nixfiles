@@ -13,9 +13,14 @@
     nvim = {
       source =
         config.lib.file.mkOutOfStoreSymlink
-        "../nvim";
+        "/home/bowen/.nixfiles/nvim";
       recursive = true;
     };
   };
+
+  # Kickstart.nvim Requirements
+  home.packages = with pkgs; [
+    ripgrep
+  ];
 }
 

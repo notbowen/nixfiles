@@ -9,6 +9,7 @@
   imports = [
     ./version-control.nix
     ./development.nix
+    ./utilities.nix
 
     ./terminal.nix
     ./neovim.nix

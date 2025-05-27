@@ -685,11 +685,11 @@ require('lazy').setup({
           },
         },
 
-        astro = {},
-        marksman = {},
-        prettier = {},
-        latexindent = {},
-        ruff = {},
+        -- astro = {},
+        -- marksman = {},
+        -- prettier = {},
+        -- latexindent = {},
+        -- ruff = {},
 
         -- reason_ls = {},
       }
