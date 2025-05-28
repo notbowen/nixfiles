@@ -36,6 +36,9 @@
   # Enable ZSH
   programs.zsh.enable = true;
 
+  # Enable Docker
+  virtualisation.docker.enable = true;
+
   # VSCode Workaround
   programs.nix-ld = {
     enable = true;
@@ -50,7 +53,10 @@
       openssh.authorizedKeys.keys = [
         "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGCNkDOrVKbSwMSRYyVAEMSfG9wFYdIB7GNwB/kSZ322 bowen@MacDonels.local"
       ];
-      extraGroups = ["wheel"];
+      extraGroups = [
+        "wheel"
+        "docker"
+      ];
       shell = pkgs.zsh;
     };
   };
