@@ -21,6 +21,11 @@
     };
   };
 
+  # System packages
+  environment.systemPackages = with pkgs; [
+    wget
+  ];
+
   # WSL Configuration
   wsl.enable = true;
   wsl.defaultUser = "bowen";
@@ -30,6 +35,12 @@
 
   # Enable ZSH
   programs.zsh.enable = true;
+
+  # VSCode Workaround
+  programs.nix-ld = {
+    enable = true;
+    package = pkgs.nix-ld;
+  };
 
   # Configure system-wide user settings (groups, etc), add more users as needed.
   users.users = {
