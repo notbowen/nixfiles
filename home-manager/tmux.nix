@@ -4,9 +4,9 @@
   programs.tmux = {
     enable = true;
 
-    plugins = with pkgs.tmuxPlugins; [{
-      plugin = vim-tmux-navigator;
-    }];
+    plugins = with pkgs.tmuxPlugins; [
+      vim-tmux-navigator
+    ];
 
     keyMode = "vi";
 
@@ -60,6 +60,9 @@
       # Fix neovim colors
       set -g default-terminal "xterm-256color"
       set-option -ga terminal-overrides ",xterm-256color:Tc"
+
+      # Clear screen
+      bind-key C-l send-keys C-l
     '';
   };
 }
